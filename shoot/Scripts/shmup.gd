@@ -1,7 +1,6 @@
 extends Node2D
 @export var txtscore:Label;
-var score =5; 
-
+var score =0; 
 func _ready() -> void:
 	txtscore.text=str(score);
 func increment_score():

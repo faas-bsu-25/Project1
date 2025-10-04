@@ -17,17 +17,17 @@ txtscore = NodePath("Label")
 position = Vector2(127, 25)
 
 [node name="PlayerShip" parent="." instance=ExtResource("2_mqevr")]
-position = Vector2(1215, 483)
+position = Vector2(1475, 1120)
 bullet_element = ExtResource("3_em5ob")
 
 [node name="EnemySpawner" parent="." instance=ExtResource("4_mqevr")]
 wait_time = 2.5
 
 [node name="Label" type="Label" parent="."]
-offset_left = 2032.0
-offset_top = 44.0
-offset_right = 2401.0
-offset_bottom = 193.0
+offset_left = 2539.0
+offset_top = 21.0
+offset_right = 2908.0
+offset_bottom = 170.0
 theme_override_fonts/font = ExtResource("6_clshc")
 theme_override_font_sizes/font_size = 122
 text = "0"

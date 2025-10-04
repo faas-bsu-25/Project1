@@ -3,11 +3,7 @@ extends RigidBody2D
 var explosion_particles = preload("res://Elements/explosion.tscn");
 func _ready() -> void:
 	self.apply_impulse(Vector2(0,-shoot_speed))
-	
-
-
 func _on_body_entered(body: Node) -> void:
-	print("hit")
 	get_node("/root/Shmup").increment_score();
 	var new_explosion=explosion_particles.instantiate();
 	get_node("/root").add_child(new_explosion);
@@ -15,5 +11,6 @@ func _on_body_entered(body: Node) -> void:
 	new_explosion.one_shot=true
 	body.queue_free();
 	self.queue_free();
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	queue_free()
 	
-	pass # Replace with function body.

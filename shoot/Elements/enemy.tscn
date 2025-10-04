@@ -23,6 +23,9 @@ texture = ExtResource("2_c0jks")
 metadata/_edit_lock_ = true
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(54.5, 23.5)
+scale = Vector2(1.98437, 1.89063)
+rect = Rect2(-32, -32, 64, 64)
 
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exited"]
