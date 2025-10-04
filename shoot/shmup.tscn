@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtfpdi3rxmdgj"]
+[gd_scene load_steps=9 format=3 uid="uid://dtfpdi3rxmdgj"]
 
 [ext_resource type="PackedScene" uid="uid://dybs4fpbr77gd" path="res://Elements/bg.tscn" id="1_otwqh"]
 [ext_resource type="Script" uid="uid://1m2eanfwm6n6" path="res://Scripts/shmup.gd" id="1_slp7o"]
 [ext_resource type="PackedScene" uid="uid://dxmh6t0ts7538" path="res://Elements/player_ship.tscn" id="2_mqevr"]
 [ext_resource type="PackedScene" uid="uid://d0yr2plvclgaw" path="res://Elements/laser.tscn" id="3_em5ob"]
 [ext_resource type="PackedScene" uid="uid://u2jan3381k27" path="res://Scripts/enemy_spawner.tscn" id="4_mqevr"]
+[ext_resource type="FontFile" uid="uid://dkrxn2pq1q7uy" path="res://Fonts/VT323-Regular.ttf" id="6_clshc"]
 [ext_resource type="Script" uid="uid://cdjn6gorhlu3m" path="res://Scripts/label.gd" id="6_uqydh"]
 [ext_resource type="AudioStream" uid="uid://ca37xvtvckfu7" path="res://Sounds/explosion.wav" id="7_uqydh"]
 
@@ -23,11 +24,14 @@ bullet_element = ExtResource("3_em5ob")
 wait_time = 2.5
 
 [node name="Label" type="Label" parent="."]
-offset_left = 2136.0
+offset_left = 2032.0
 offset_top = 44.0
-offset_right = 2363.0
+offset_right = 2401.0
 offset_bottom = 193.0
+theme_override_fonts/font = ExtResource("6_clshc")
+theme_override_font_sizes/font_size = 122
 text = "0"
+horizontal_alignment = 1
 script = ExtResource("6_uqydh")
 
 [node name="SFXExplosion" type="AudioStreamPlayer2D" parent="."]

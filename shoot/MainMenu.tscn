@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0w6cvm3hbw7c"]
+
+[ext_resource type="Script" uid="uid://dydvs3ivsk5aa" path="res://Scripts/main_menu.gd" id="1_i26rj"]
+[ext_resource type="Texture2D" uid="uid://bvw32kao6yh1b" path="res://images/space.jpg" id="2_qoqlk"]
+[ext_resource type="FontFile" uid="uid://dkrxn2pq1q7uy" path="res://Fonts/VT323-Regular.ttf" id="3_iwfq2"]
+[ext_resource type="FontFile" uid="uid://bqeio4siskb4n" path="res://Fonts/Starjedi.ttf" id="4_7r1g0"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_i26rj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 2945.0
+offset_bottom = 1806.0
+texture = ExtResource("2_qoqlk")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1286.0
+offset_top = 1301.0
+offset_right = 1632.0
+offset_bottom = 1455.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 113
+text = "Start Game"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 2948.0
+offset_bottom = 259.0
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 80
+text = "Space the Final Frontier
+"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 355.0
+offset_right = 2940.0
+offset_bottom = 477.0
+theme_override_fonts/font = ExtResource("4_7r1g0")
+theme_override_font_sizes/font_size = 32
+text = "Go Where No Man Has Gone Before and Defend the Galaxy."
+horizontal_alignment = 1
