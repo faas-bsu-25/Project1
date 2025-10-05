@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1epx45mnk0ck"
+path="res://.godot/imported/real 56k Dialup Modem Sound.mp3-0d743530d0ea06a1d0de2cbf77a05437.mp3str"
+
+[deps]
+
+source_file="res://Sounds/real 56k Dialup Modem Sound.mp3"
+dest_files=["res://.godot/imported/real 56k Dialup Modem Sound.mp3-0d743530d0ea06a1d0de2cbf77a05437.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dtfpdi3rxmdgj"]
+[gd_scene load_steps=10 format=3 uid="uid://dtfpdi3rxmdgj"]
 
 [ext_resource type="PackedScene" uid="uid://dybs4fpbr77gd" path="res://Elements/bg.tscn" id="1_otwqh"]
 [ext_resource type="Script" uid="uid://1m2eanfwm6n6" path="res://Scripts/shmup.gd" id="1_slp7o"]
@@ -8,6 +8,7 @@
 [ext_resource type="FontFile" uid="uid://dkrxn2pq1q7uy" path="res://Fonts/VT323-Regular.ttf" id="6_clshc"]
 [ext_resource type="Script" uid="uid://cdjn6gorhlu3m" path="res://Scripts/label.gd" id="6_uqydh"]
 [ext_resource type="AudioStream" uid="uid://ca37xvtvckfu7" path="res://Sounds/explosion.wav" id="7_uqydh"]
+[ext_resource type="AudioStream" uid="uid://ctovm5uso4hwt" path="res://Sounds/Ancient-Troops-Amassing.mp3" id="9_1wiae"]
 
 [node name="Shmup" type="Node2D" node_paths=PackedStringArray("txtscore")]
 script = ExtResource("1_slp7o")
@@ -36,5 +37,10 @@ script = ExtResource("6_uqydh")
 
 [node name="SFXExplosion" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_uqydh")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_1wiae")
+autoplay = true
+parameters/looping = true
 
 [connection signal="timeout" from="EnemySpawner" to="EnemySpawner" method="_on_timeout"]
